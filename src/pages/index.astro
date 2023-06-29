@@ -26,7 +26,7 @@ import Layout from '../layouts/Layout.astro';
     const formData = new FormData($form);
     const link = formData.get('link') as string;
 
-	const res = await (await fetch(`http://127.0.0.1:3333/?url=${link}`)).json()
+	const res = await (await fetch(`http://74.208.129.103:3333/?url=${link}`)).json()
 
 	if(!res?.success) {
 		console.log('error')
